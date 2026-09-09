@@ -1,0 +1,381 @@
+{
+  "answer": {
+    "output": "Available minus required control moment",
+    "unit": "N m",
+    "threshold": "0",
+    "control": "Insufficient authority",
+    "explanation3": "The available control moment is less than the required control moment"
+  },
+  "reflection": {
+    "confirmedFor": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+    "observation": "We require 1350 N-m of control capacity for this elevator. To meet this demand ",
+    "change": "I did not change anything",
+    "result": "supported",
+    "limit": "the angular acceleration should be studied. Or perhaps it may also be useful to look at the dynamic stability"
+  },
+  "attempt": {
+    "id": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+    "missionVersion": "3.0.0",
+    "answerSnapshot": "{\"output\":\"Available minus required control moment\",\"unit\":\"N m\",\"threshold\":\"0\",\"control\":\"Insufficient authority\",\"explanation3\":\"The available control moment is less than the required control moment\"}",
+    "at": "2026-09-09T21:11:11.692Z",
+    "result": {
+      "runnable": true,
+      "passed": true,
+      "checks": [
+        {
+          "field": "output",
+          "expected": "Available minus required control moment",
+          "message": "Use the control comparison, not the trim or stability indicator.",
+          "tolerance": 0.000001,
+          "actual": "Available minus required control moment",
+          "passed": true
+        },
+        {
+          "field": "unit",
+          "expected": "N m",
+          "message": "Compare compatible moments.",
+          "tolerance": 0.000001,
+          "actual": "N m",
+          "passed": true
+        },
+        {
+          "field": "threshold",
+          "expected": 0,
+          "message": "Equality satisfies the inclusive requirement.",
+          "tolerance": 0.0001,
+          "actual": "0",
+          "passed": true
+        },
+        {
+          "field": "control",
+          "expected": "Insufficient authority",
+          "message": "The -550 N m margin remains negative despite trim and restoring tendency.",
+          "tolerance": 0.000001,
+          "actual": "Insufficient authority",
+          "passed": true
+        }
+      ],
+      "traces": [
+        {
+          "x": 400,
+          "supplied": -950,
+          "reference": 0
+        },
+        {
+          "x": 800,
+          "supplied": -550,
+          "reference": 0
+        },
+        {
+          "x": 1350,
+          "supplied": 0,
+          "reference": 0
+        },
+        {
+          "x": 2000,
+          "supplied": 650,
+          "reference": 0
+        }
+      ]
+    }
+  },
+  "history": [
+    {
+      "answer": {
+        "output": "Available minus required control moment",
+        "unit": "N m",
+        "threshold": "0",
+        "control": "Insufficient authority"
+      },
+      "attempt": {
+        "id": "c21785a6-076b-447e-afb2-fcc7252e729d",
+        "missionVersion": "3.0.0",
+        "answerSnapshot": "{\"output\":\"Available minus required control moment\",\"unit\":\"N m\",\"threshold\":\"0\",\"control\":\"Insufficient authority\"}",
+        "at": "2026-09-09T21:10:50.210Z",
+        "result": {
+          "runnable": false,
+          "checks": [
+            {
+              "field": "explanation3",
+              "message": "Supply Explain the reasoning for outputs.",
+              "kind": "missing"
+            }
+          ]
+        }
+      },
+      "reflection": {
+        "confirmedFor": ""
+      }
+    }
+  ],
+  "caseDrafts": {
+    "800": {
+      "evidence": "-550",
+      "conclusion": "Insufficient authority",
+      "note": "this doesnt meet the requirement because the control margin is negative so this check fails"
+    },
+    "1350": {
+      "evidence": "0",
+      "conclusion": "Requirement met",
+      "note": "This case has a control margin of 0 which means there is sufficient control authority"
+    },
+    "2000": {
+      "evidence": "650",
+      "conclusion": "Requirement met",
+      "note": "This case shows the control margin is met because 650 > 0"
+    }
+  },
+  "attempts": [
+    {
+      "id": "c21785a6-076b-447e-afb2-fcc7252e729d",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"output\":\"Available minus required control moment\",\"unit\":\"N m\",\"threshold\":\"0\",\"control\":\"Insufficient authority\"}",
+      "at": "2026-09-09T21:10:50.210Z",
+      "result": {
+        "runnable": false,
+        "checks": [
+          {
+            "field": "explanation3",
+            "message": "Supply Explain the reasoning for outputs.",
+            "kind": "missing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"output\":\"Available minus required control moment\",\"unit\":\"N m\",\"threshold\":\"0\",\"control\":\"Insufficient authority\",\"explanation3\":\"The available control moment is less than the required control moment\"}",
+      "at": "2026-09-09T21:11:11.692Z",
+      "result": {
+        "runnable": true,
+        "passed": true,
+        "checks": [
+          {
+            "field": "output",
+            "expected": "Available minus required control moment",
+            "message": "Use the control comparison, not the trim or stability indicator.",
+            "tolerance": 0.000001,
+            "actual": "Available minus required control moment",
+            "passed": true
+          },
+          {
+            "field": "unit",
+            "expected": "N m",
+            "message": "Compare compatible moments.",
+            "tolerance": 0.000001,
+            "actual": "N m",
+            "passed": true
+          },
+          {
+            "field": "threshold",
+            "expected": 0,
+            "message": "Equality satisfies the inclusive requirement.",
+            "tolerance": 0.0001,
+            "actual": "0",
+            "passed": true
+          },
+          {
+            "field": "control",
+            "expected": "Insufficient authority",
+            "message": "The -550 N m margin remains negative despite trim and restoring tendency.",
+            "tolerance": 0.000001,
+            "actual": "Insufficient authority",
+            "passed": true
+          }
+        ],
+        "traces": [
+          {
+            "x": 400,
+            "supplied": -950,
+            "reference": 0
+          },
+          {
+            "x": 800,
+            "supplied": -550,
+            "reference": 0
+          },
+          {
+            "x": 1350,
+            "supplied": 0,
+            "reference": 0
+          },
+          {
+            "x": 2000,
+            "supplied": 650,
+            "reference": 0
+          }
+        ]
+      }
+    }
+  ],
+  "view": {
+    "caseId": "1350"
+  },
+  "interpretations": {
+    "800": [
+      {
+        "correct": true,
+        "feedback": "Your interpretation matches this comparison: Insufficient authority. Control margin: -550 N m. -550 ≥ 0 Written reasoning still awaits instructor review.",
+        "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+        "at": "2026-09-09T21:20:48.241Z",
+        "conclusion": "Insufficient authority",
+        "evidence": "-550",
+        "note": "this doesnt meet the requirement because the control margin is negative so this check fails",
+        "draftSnapshot": "{\"evidence\":\"-550\",\"conclusion\":\"Insufficient authority\",\"note\":\"this doesnt meet the requirement because the control margin is negative so this check fails\"}"
+      }
+    ],
+    "1350": [
+      {
+        "correct": true,
+        "feedback": "Your interpretation matches this comparison: Requirement met. Control margin: 0 N m. 0 ≥ 0 Written reasoning still awaits instructor review.",
+        "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+        "at": "2026-09-09T21:21:49.258Z",
+        "conclusion": "Requirement met",
+        "evidence": "0",
+        "note": "This case has a control margin of 0 which means there is sufficient control authority",
+        "draftSnapshot": "{\"evidence\":\"0\",\"conclusion\":\"Requirement met\",\"note\":\"This case has a control margin of 0 which means there is sufficient control authority\"}"
+      }
+    ],
+    "2000": [
+      {
+        "correct": true,
+        "feedback": "Your interpretation matches this comparison: Requirement met. Control margin: 650 N m. 650 ≥ 0 Written reasoning still awaits instructor review.",
+        "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+        "at": "2026-09-09T21:22:17.488Z",
+        "conclusion": "Requirement met",
+        "evidence": "650",
+        "note": "This case shows the control margin is met because 650 > 0",
+        "draftSnapshot": "{\"evidence\":\"650\",\"conclusion\":\"Requirement met\",\"note\":\"This case shows the control margin is met because 650 > 0\"}"
+      }
+    ]
+  },
+  "observations": {
+    "800": {
+      "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+      "at": "2026-09-09T21:20:48.241Z",
+      "note": "this doesnt meet the requirement because the control margin is negative so this check fails",
+      "evidence": "-550",
+      "conclusion": "Insufficient authority",
+      "readouts": [
+        {
+          "label": "Trim: reference net moment",
+          "expression": "0",
+          "unit": "N m",
+          "value": 0
+        },
+        {
+          "label": "Static restoring derivative",
+          "expression": "-0.6",
+          "unit": "per rad",
+          "value": -0.6
+        },
+        {
+          "label": "Available control moment",
+          "expression": "available",
+          "unit": "N m",
+          "value": 800
+        },
+        {
+          "label": "Required control moment",
+          "expression": "required",
+          "unit": "N m",
+          "value": 1350
+        },
+        {
+          "label": "Control margin",
+          "expression": "available-required",
+          "unit": "N m",
+          "value": -550
+        }
+      ],
+      "inputs": {
+        "available": 800
+      }
+    },
+    "1350": {
+      "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+      "at": "2026-09-09T21:21:49.258Z",
+      "note": "This case has a control margin of 0 which means there is sufficient control authority",
+      "evidence": "0",
+      "conclusion": "Requirement met",
+      "readouts": [
+        {
+          "label": "Trim: reference net moment",
+          "expression": "0",
+          "unit": "N m",
+          "value": 0
+        },
+        {
+          "label": "Static restoring derivative",
+          "expression": "-0.6",
+          "unit": "per rad",
+          "value": -0.6
+        },
+        {
+          "label": "Available control moment",
+          "expression": "available",
+          "unit": "N m",
+          "value": 1350
+        },
+        {
+          "label": "Required control moment",
+          "expression": "required",
+          "unit": "N m",
+          "value": 1350
+        },
+        {
+          "label": "Control margin",
+          "expression": "available-required",
+          "unit": "N m",
+          "value": 0
+        }
+      ],
+      "inputs": {
+        "available": 1350
+      }
+    },
+    "2000": {
+      "attemptId": "7eeadb12-daac-44f3-ad2a-5872696e9907",
+      "at": "2026-09-09T21:22:17.488Z",
+      "note": "This case shows the control margin is met because 650 > 0",
+      "evidence": "650",
+      "conclusion": "Requirement met",
+      "readouts": [
+        {
+          "label": "Trim: reference net moment",
+          "expression": "0",
+          "unit": "N m",
+          "value": 0
+        },
+        {
+          "label": "Static restoring derivative",
+          "expression": "-0.6",
+          "unit": "per rad",
+          "value": -0.6
+        },
+        {
+          "label": "Available control moment",
+          "expression": "available",
+          "unit": "N m",
+          "value": 2000
+        },
+        {
+          "label": "Required control moment",
+          "expression": "required",
+          "unit": "N m",
+          "value": 1350
+        },
+        {
+          "label": "Control margin",
+          "expression": "available-required",
+          "unit": "N m",
+          "value": 650
+        }
+      ],
+      "inputs": {
+        "available": 2000
+      }
+    }
+  }
+}
