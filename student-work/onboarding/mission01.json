@@ -1,0 +1,84 @@
+{
+  "answer": {
+    "question": "Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint."
+  },
+  "reflection": {
+    "confirmedFor": ""
+  },
+  "attempt": {
+    "id": "c760c997-2776-4015-b716-857ba3744ee0",
+    "missionVersion": "3.0.0",
+    "answerSnapshot": "{\"question\":\"Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.\"}",
+    "at": "2026-09-09T19:24:00.047Z",
+    "result": {
+      "runnable": false,
+      "checks": [
+        {
+          "field": "quantity",
+          "message": "Supply Measured response.",
+          "kind": "missing"
+        },
+        {
+          "field": "threshold",
+          "message": "Supply Required acceleration (rad/s²).",
+          "kind": "missing"
+        },
+        {
+          "field": "comparison",
+          "message": "Supply Success criterion.",
+          "kind": "missing"
+        },
+        {
+          "field": "explanation0",
+          "message": "Supply Explain your engineering reasoning.",
+          "kind": "missing"
+        },
+        {
+          "field": "scope",
+          "message": "Supply What claim does your question ask this model to establish?.",
+          "kind": "missing"
+        }
+      ]
+    }
+  },
+  "history": [],
+  "caseDrafts": {},
+  "attempts": [
+    {
+      "id": "c760c997-2776-4015-b716-857ba3744ee0",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"question\":\"Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.\"}",
+      "at": "2026-09-09T19:24:00.047Z",
+      "result": {
+        "runnable": false,
+        "checks": [
+          {
+            "field": "quantity",
+            "message": "Supply Measured response.",
+            "kind": "missing"
+          },
+          {
+            "field": "threshold",
+            "message": "Supply Required acceleration (rad/s²).",
+            "kind": "missing"
+          },
+          {
+            "field": "comparison",
+            "message": "Supply Success criterion.",
+            "kind": "missing"
+          },
+          {
+            "field": "explanation0",
+            "message": "Supply Explain your engineering reasoning.",
+            "kind": "missing"
+          },
+          {
+            "field": "scope",
+            "message": "Supply What claim does your question ask this model to establish?.",
+            "kind": "missing"
+          }
+        ]
+      }
+    }
+  ]
+}
