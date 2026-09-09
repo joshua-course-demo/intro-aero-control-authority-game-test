@@ -1,15 +1,15 @@
 {
   "answer": {
-    "question": "Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint."
+    "question": "Delivery smoke test — revised incomplete draft with spaces, second checkpoint."
   },
   "reflection": {
     "confirmedFor": ""
   },
   "attempt": {
-    "id": "c760c997-2776-4015-b716-857ba3744ee0",
+    "id": "a6661438-5ab4-4646-a715-a40ed7e9552e",
     "missionVersion": "3.0.0",
-    "answerSnapshot": "{\"question\":\"Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.\"}",
-    "at": "2026-09-09T19:24:00.047Z",
+    "answerSnapshot": "{\"question\":\"Delivery smoke test — revised incomplete draft with spaces, second checkpoint.\"}",
+    "at": "2026-09-09T19:24:25.083Z",
     "result": {
       "runnable": false,
       "checks": [
@@ -41,7 +41,52 @@
       ]
     }
   },
-  "history": [],
+  "history": [
+    {
+      "answer": {
+        "question": "Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint."
+      },
+      "attempt": {
+        "id": "c760c997-2776-4015-b716-857ba3744ee0",
+        "missionVersion": "3.0.0",
+        "answerSnapshot": "{\"question\":\"Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.\"}",
+        "at": "2026-09-09T19:24:00.047Z",
+        "result": {
+          "runnable": false,
+          "checks": [
+            {
+              "field": "quantity",
+              "message": "Supply Measured response.",
+              "kind": "missing"
+            },
+            {
+              "field": "threshold",
+              "message": "Supply Required acceleration (rad/s²).",
+              "kind": "missing"
+            },
+            {
+              "field": "comparison",
+              "message": "Supply Success criterion.",
+              "kind": "missing"
+            },
+            {
+              "field": "explanation0",
+              "message": "Supply Explain your engineering reasoning.",
+              "kind": "missing"
+            },
+            {
+              "field": "scope",
+              "message": "Supply What claim does your question ask this model to establish?.",
+              "kind": "missing"
+            }
+          ]
+        }
+      },
+      "reflection": {
+        "confirmedFor": ""
+      }
+    }
+  ],
   "caseDrafts": {},
   "attempts": [
     {
@@ -79,6 +124,49 @@
           }
         ]
       }
+    },
+    {
+      "id": "a6661438-5ab4-4646-a715-a40ed7e9552e",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"question\":\"Delivery smoke test — revised incomplete draft with spaces, second checkpoint.\"}",
+      "at": "2026-09-09T19:24:25.083Z",
+      "result": {
+        "runnable": false,
+        "checks": [
+          {
+            "field": "quantity",
+            "message": "Supply Measured response.",
+            "kind": "missing"
+          },
+          {
+            "field": "threshold",
+            "message": "Supply Required acceleration (rad/s²).",
+            "kind": "missing"
+          },
+          {
+            "field": "comparison",
+            "message": "Supply Success criterion.",
+            "kind": "missing"
+          },
+          {
+            "field": "explanation0",
+            "message": "Supply Explain your engineering reasoning.",
+            "kind": "missing"
+          },
+          {
+            "field": "scope",
+            "message": "Supply What claim does your question ask this model to establish?.",
+            "kind": "missing"
+          }
+        ]
+      }
     }
-  ]
+  ],
+  "delivery": {
+    "status": "sent",
+    "snapshot": "{\"answer\":{\"question\":\"Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.\"},\"attempt\":\"c760c997-2776-4015-b716-857ba3744ee0\",\"reflection\":{\"confirmedFor\":\"\"}}",
+    "revision": "bb1b6af6a3053de3098c3162ebba0116ac1c125f",
+    "url": "https://github.com/joshua-course-demo/intro-aero-control-authority-game-test/commit/bb1b6af6a3053de3098c3162ebba0116ac1c125f",
+    "at": "2026-09-09T19:24:13.155Z"
+  }
 }

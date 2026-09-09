@@ -1,7 +1,7 @@
 # Ask a testable question
 
 ## Engineering question
-question: Delivery smoke test — deliberately incomplete draft with spaces, first checkpoint.
+question: Delivery smoke test — revised incomplete draft with spaces, second checkpoint.
 
 ## Physics model
 available = 0.5*rho*V^2*S*c*dCm; required=Iy*target-other; acceleration=(available+other)/Iy
