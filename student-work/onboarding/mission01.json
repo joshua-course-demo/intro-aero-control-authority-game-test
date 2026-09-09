@@ -1,0 +1,384 @@
+{
+  "answer": {
+    "question": "i dont know",
+    "quantity": "Initial pitch acceleration",
+    "threshold": "5",
+    "comparison": "At least the threshold",
+    "explanation0": "i dont know",
+    "scope": "Initial pitch response at the stated condition"
+  },
+  "reflection": {
+    "confirmedFor": ""
+  },
+  "attempt": {
+    "id": "f9b87e6d-2656-4808-a243-20d0a31eac7a",
+    "missionVersion": "3.0.0",
+    "answerSnapshot": "{\"question\":\"i dont know\",\"quantity\":\"Initial pitch acceleration\",\"threshold\":\"5\",\"comparison\":\"At least the threshold\",\"explanation0\":\"i dont know\",\"scope\":\"Initial pitch response at the stated condition\"}",
+    "at": "2026-09-09T19:38:29.256Z",
+    "result": {
+      "runnable": true,
+      "passed": false,
+      "checks": [
+        {
+          "field": "quantity",
+          "expected": "Initial pitch acceleration",
+          "message": "This instrument measures initial pitch acceleration; it cannot establish takeoff distance or crosswind control.",
+          "actual": "Initial pitch acceleration",
+          "passed": true
+        },
+        {
+          "field": "threshold",
+          "expected": 0.12,
+          "message": "Use the specified response demand, not the observed capacity.",
+          "tolerance": 0.0001,
+          "actual": "5",
+          "passed": false
+        },
+        {
+          "field": "comparison",
+          "expected": "At least the threshold",
+          "message": "Equality satisfies an at-least requirement.",
+          "actual": "At least the threshold",
+          "passed": true
+        },
+        {
+          "field": "scope",
+          "expected": "Initial pitch response at the stated condition",
+          "message": "This model only addresses the initial pitch response. Narrow a takeoff or safety question before proceeding.",
+          "actual": "Initial pitch response at the stated condition",
+          "passed": true
+        }
+      ],
+      "traces": [
+        {
+          "x": 10,
+          "supplied": 0.050124,
+          "reference": 5
+        },
+        {
+          "x": 14,
+          "supplied": 0.24224303999999997,
+          "reference": 5
+        },
+        {
+          "x": 20,
+          "supplied": 0.650496,
+          "reference": 5
+        },
+        {
+          "x": 24,
+          "supplied": 1.00271424,
+          "reference": 5
+        }
+      ]
+    }
+  },
+  "history": [
+    {
+      "answer": {},
+      "attempt": {
+        "id": "92f9b893-79a8-4d77-94fa-22f4cfadb5f1",
+        "missionVersion": "3.0.0",
+        "answerSnapshot": "{}",
+        "at": "2026-09-09T19:37:46.795Z",
+        "result": {
+          "runnable": false,
+          "checks": [
+            {
+              "field": "question",
+              "message": "Supply Write the engineering question.",
+              "kind": "missing"
+            },
+            {
+              "field": "quantity",
+              "message": "Supply Measured response.",
+              "kind": "missing"
+            },
+            {
+              "field": "threshold",
+              "message": "Supply Required acceleration (rad/s²).",
+              "kind": "missing"
+            },
+            {
+              "field": "comparison",
+              "message": "Supply Success criterion.",
+              "kind": "missing"
+            },
+            {
+              "field": "explanation0",
+              "message": "Supply Explain your engineering reasoning.",
+              "kind": "missing"
+            },
+            {
+              "field": "scope",
+              "message": "Supply What claim does your question ask this model to establish?.",
+              "kind": "missing"
+            }
+          ]
+        }
+      },
+      "reflection": {
+        "confirmedFor": ""
+      }
+    },
+    {
+      "answer": {
+        "question": "i dont know"
+      },
+      "attempt": {
+        "id": "8ad6c9b2-4ff2-44f4-9899-43ac90af3b9a",
+        "missionVersion": "3.0.0",
+        "answerSnapshot": "{\"question\":\"i dont know\"}",
+        "at": "2026-09-09T19:37:58.452Z",
+        "result": {
+          "runnable": false,
+          "checks": [
+            {
+              "field": "quantity",
+              "message": "Supply Measured response.",
+              "kind": "missing"
+            },
+            {
+              "field": "threshold",
+              "message": "Supply Required acceleration (rad/s²).",
+              "kind": "missing"
+            },
+            {
+              "field": "comparison",
+              "message": "Supply Success criterion.",
+              "kind": "missing"
+            },
+            {
+              "field": "explanation0",
+              "message": "Supply Explain your engineering reasoning.",
+              "kind": "missing"
+            },
+            {
+              "field": "scope",
+              "message": "Supply What claim does your question ask this model to establish?.",
+              "kind": "missing"
+            }
+          ]
+        }
+      },
+      "reflection": {
+        "confirmedFor": ""
+      }
+    }
+  ],
+  "caseDrafts": {
+    "10": {
+      "evidence": "0.0501",
+      "conclusion": "Insufficient authority",
+      "note": "The initial acceleration for this takeoff speed is too low"
+    }
+  },
+  "attempts": [
+    {
+      "id": "92f9b893-79a8-4d77-94fa-22f4cfadb5f1",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{}",
+      "at": "2026-09-09T19:37:46.795Z",
+      "result": {
+        "runnable": false,
+        "checks": [
+          {
+            "field": "question",
+            "message": "Supply Write the engineering question.",
+            "kind": "missing"
+          },
+          {
+            "field": "quantity",
+            "message": "Supply Measured response.",
+            "kind": "missing"
+          },
+          {
+            "field": "threshold",
+            "message": "Supply Required acceleration (rad/s²).",
+            "kind": "missing"
+          },
+          {
+            "field": "comparison",
+            "message": "Supply Success criterion.",
+            "kind": "missing"
+          },
+          {
+            "field": "explanation0",
+            "message": "Supply Explain your engineering reasoning.",
+            "kind": "missing"
+          },
+          {
+            "field": "scope",
+            "message": "Supply What claim does your question ask this model to establish?.",
+            "kind": "missing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "8ad6c9b2-4ff2-44f4-9899-43ac90af3b9a",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"question\":\"i dont know\"}",
+      "at": "2026-09-09T19:37:58.452Z",
+      "result": {
+        "runnable": false,
+        "checks": [
+          {
+            "field": "quantity",
+            "message": "Supply Measured response.",
+            "kind": "missing"
+          },
+          {
+            "field": "threshold",
+            "message": "Supply Required acceleration (rad/s²).",
+            "kind": "missing"
+          },
+          {
+            "field": "comparison",
+            "message": "Supply Success criterion.",
+            "kind": "missing"
+          },
+          {
+            "field": "explanation0",
+            "message": "Supply Explain your engineering reasoning.",
+            "kind": "missing"
+          },
+          {
+            "field": "scope",
+            "message": "Supply What claim does your question ask this model to establish?.",
+            "kind": "missing"
+          }
+        ]
+      }
+    },
+    {
+      "id": "f9b87e6d-2656-4808-a243-20d0a31eac7a",
+      "missionVersion": "3.0.0",
+      "answerSnapshot": "{\"question\":\"i dont know\",\"quantity\":\"Initial pitch acceleration\",\"threshold\":\"5\",\"comparison\":\"At least the threshold\",\"explanation0\":\"i dont know\",\"scope\":\"Initial pitch response at the stated condition\"}",
+      "at": "2026-09-09T19:38:29.256Z",
+      "result": {
+        "runnable": true,
+        "passed": false,
+        "checks": [
+          {
+            "field": "quantity",
+            "expected": "Initial pitch acceleration",
+            "message": "This instrument measures initial pitch acceleration; it cannot establish takeoff distance or crosswind control.",
+            "actual": "Initial pitch acceleration",
+            "passed": true
+          },
+          {
+            "field": "threshold",
+            "expected": 0.12,
+            "message": "Use the specified response demand, not the observed capacity.",
+            "tolerance": 0.0001,
+            "actual": "5",
+            "passed": false
+          },
+          {
+            "field": "comparison",
+            "expected": "At least the threshold",
+            "message": "Equality satisfies an at-least requirement.",
+            "actual": "At least the threshold",
+            "passed": true
+          },
+          {
+            "field": "scope",
+            "expected": "Initial pitch response at the stated condition",
+            "message": "This model only addresses the initial pitch response. Narrow a takeoff or safety question before proceeding.",
+            "actual": "Initial pitch response at the stated condition",
+            "passed": true
+          }
+        ],
+        "traces": [
+          {
+            "x": 10,
+            "supplied": 0.050124,
+            "reference": 5
+          },
+          {
+            "x": 14,
+            "supplied": 0.24224303999999997,
+            "reference": 5
+          },
+          {
+            "x": 20,
+            "supplied": 0.650496,
+            "reference": 5
+          },
+          {
+            "x": 24,
+            "supplied": 1.00271424,
+            "reference": 5
+          }
+        ]
+      }
+    }
+  ],
+  "view": {
+    "caseId": "10"
+  },
+  "interpretations": {
+    "10": [
+      {
+        "correct": true,
+        "feedback": "Your interpretation matches this comparison: Insufficient authority. Full-command initial acceleration: 0.0501 rad/s². 0.0501 ≥ 0.12 Written reasoning still awaits instructor review.",
+        "attemptId": "f9b87e6d-2656-4808-a243-20d0a31eac7a",
+        "at": "2026-09-09T20:11:45.071Z",
+        "conclusion": "Insufficient authority",
+        "evidence": "0.0501",
+        "note": "The initial acceleration for this takeoff speed is too low",
+        "draftSnapshot": "{\"evidence\":\"0.0501\",\"conclusion\":\"Insufficient authority\",\"note\":\"The initial acceleration for this takeoff speed is too low\"}"
+      }
+    ]
+  },
+  "observations": {
+    "10": {
+      "attemptId": "f9b87e6d-2656-4808-a243-20d0a31eac7a",
+      "at": "2026-09-09T20:11:45.071Z",
+      "note": "The initial acceleration for this takeoff speed is too low",
+      "evidence": "0.0501",
+      "conclusion": "Insufficient authority",
+      "readouts": [
+        {
+          "label": "Available elevator capacity",
+          "expression": "0.5*rho*V^2*S*c*dCm",
+          "unit": "N m",
+          "value": 1000.62
+        },
+        {
+          "label": "Required elevator moment",
+          "expression": "Iy*target-other",
+          "unit": "N m",
+          "value": 1350
+        },
+        {
+          "label": "Pitch-authority margin",
+          "expression": "0.5*rho*V^2*S*c*dCm-(Iy*target-other)",
+          "unit": "N m",
+          "value": -349.38
+        },
+        {
+          "label": "Full-command initial acceleration",
+          "expression": "(0.5*rho*V^2*S*c*dCm+other)/Iy",
+          "unit": "rad/s²",
+          "value": 0.050124
+        },
+        {
+          "label": "Specified minimum initial acceleration",
+          "expression": "target",
+          "unit": "rad/s²",
+          "value": 0.12
+        }
+      ],
+      "inputs": {
+        "V": 10
+      }
+    }
+  },
+  "delivery": {
+    "status": "failed",
+    "error": "PROTECTED SYSTEM MODIFIED: src/core/onboarding/Game.jsx; PROTECTED SYSTEM MODIFIED: src/core/visualization/EngineeringPlot.jsx",
+    "at": "2026-09-09T20:26:10.151Z"
+  }
+}
